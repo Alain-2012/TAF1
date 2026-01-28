@@ -1,1 +1,857 @@
 
+.center-img {
+  display: block;
+  margin: auto;
+}
+.sect {
+  background-color: rgb(3, 81, 61);
+width: 100%;
+}
+.center-text {
+  text-align: center;
+}
+.container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 15px;
+  color: white;        /* icônes blanches */
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #013a34;      /* vert au hover (optionnel) */
+}
+.about-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color:  rgb(3, 81, 61);
+  color: rgb(6, 6, 6);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 250;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-btn i {
+  font-size: 14px;
+}
+
+.about-btn:hover {
+  background-color: #024635;
+}
+.service-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color:  rgb(3, 81, 61);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-btn i {
+  font-size: 14px;
+}
+
+.service-btn:hover {
+  background-color:  rgb(3, 81, 61);
+}
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: rgb(3, 81, 61);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-btn i {
+  font-size: 14px;
+}
+
+.resume-btn:hover {
+  background-color: #024a3e;
+}
+.blog-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: rgb(3, 81, 61);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog-icon {
+  width: 22px;
+  height: 25px;
+
+  background-color: rgb(3, 81, 61);
+  color: #eef3ef;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.blog-btn:hover {
+  background-color: #218838;
+}
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color:rgb(3, 81, 61);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn i {
+  font-size: 14px;
+}
+
+.contact-btn:hover {
+  background-color:  rgb(3, 81, 61);
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: rgb(3, 81, 61);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* triangle */
+.triangle {
+  margin-left: 5px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* juste en dessous du bouton */
+  left: 0;
+  background-color:  rgb(3, 81, 61);
+  min-width: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Liens du menu */
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #218838;
+}
+
+/* Affiche le menu au survol */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Triangle tourné au survol */
+.dropdown:hover .triangle {
+  transform: rotate(180deg);
+}
+
+/* Barre horizontale */
+.hire-bar {
+  display: flex;
+  align-items: center;      /* centre icône verticalement par rapport au texte */
+  justify-content: center;  /* centre tout le bloc icône+texte dans la barre */
+  gap: 10px;                /* espace entre icône et texte */
+
+  background-color: #262d26;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Icône Telegram */
+.hire-bar i {
+  color: white;             /* icône blanche */
+  font-size: 20px;
+}
+
+/* Texte */
+.hire-bar .hire-text {
+  color: white;             /* texte blanc */
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Hover */
+.hire-bar:hover {
+  background-color: #202220;
+}
+
+.dark-mode-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* centre le bloc icône + texte */
+  gap: 8px;                 /* espace entre lune et texte */
+}
+
+/* Icône lune bicolore */
+.moon-icon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Partie noire */
+.moon-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
+/* Partie blanche */
+.moon-light {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+/* Texte */
+.label-text {
+  color: rgb(227, 215, 215);        /* texte noir */
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Mode sombre */
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Bouton */
+.theme-btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background-color: #0bde9b;
+}
+
+/* Bouton en mode sombre */
+body.dark .theme-btn {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+:root {
+    --bg-color: #080808;
+    --switch-bg: #0c0c0d;
+    --ball-color: #433b3b;
+}
+
+.dark-mode {
+    --bg-color: #fffcfc;
+    --switch-bg: #000000;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: ;
+}
+
+/* FIXE AU CENTRE EN BAS */
+#theme-switch {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 48px;
+    height: 22px;
+    background-color: var(--switch-bg);
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+/* BOULE */
+#theme-switch .ball {
+    width: 18px;
+    height: 18px;
+    background-color: var(--ball-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.25s ease;
+}
+
+.dark-mode #theme-switch .ball {
+    transform: translateX(26px);
+}
+#theme-switch {
+    border: 2px solid rgb(9, 8, 8);
+}
+
+.hamburger-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* espace entre les barres */
+}
+
+/* Barres horizontales */
+.hamburger-btn span {
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+.green {
+    color: #22c55e; /* vert */
+    font-weight: 600; /* optionnel */
+}
+
+* Conteneur des boutons */
+.button-group {
+    display: flex;
+    justify-content: flex-start; /* aligne à gauche */
+    gap: 20px;                   /* espace entre les boutons */
+    margin-top: 20px;            /* optionnel, espace au-dessus */
+    margin-left: 20px;           /* décale légèrement depuis le bord gauche */
+}
+
+/* Styles communs aux boutons */
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;         /* arrondi complet */
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet hover */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Portfolio vert */
+.btn.green {
+    background-color: #22c55e;
+}
+
+.btn.green:hover {
+    background-color: #16a34a;
+}
+
+/* Resume noir */
+.btn.black {
+    background-color: #111;
+}
+
+.btn.black:hover {
+    background-color: #333;
+}
+.my-image {
+    display: block;       /* permet de gérer les marges correctement */
+    margin-top: 50px;     /* descend de 50px */
+    margin-left: 20px;    /* décale vers la gauche */
+    /* margin-right: auto; si tu veux qu'elle reste alignée à gauche */
+}
+
+
+
+
+
+
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;              /* espace entre la barre et le texte */
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Barre verte verticale */
+.section-title .bar {
+    width: 5px;
+    height: 28px;
+    background-color: #22c55e; /* vert */
+    border-radius: 3px;
+}
+.tech-icon {
+    font-size: 50px;
+    color: #22c55e;; /* couleur des icônes */
+    margin-bottom: 10px;
+}
+.multi-icons i {
+    margin-right: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    padding: 60px;
+}
+
+.skills {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.skill-card {
+    text-align: left;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    font-weight: 700;
+}
+
+.skill-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Icons */
+.skill-icon {
+    font-size: 40px;
+    margin-right: 8px;
+}
+
+/* Colors */
+.js { color: #f7df1e; }
+.angular { color: #dd1b16; }
+.react { color: #61dafb; }
+.vue { color: #42b883; }
+.node { color: #68a063; }
+.python { color: #3776ab; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.skills {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+}
+
+.skill-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* icons */
+.skill-icon {
+    font-size: 40px;
+    margin-right: 8px;
+}
+
+.icons-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* colors */
+.php { color: #777bb4; }
+.npm { color: #cb3837; }
+.gulp { color: #cf4647; }
+.grunt { color: #fba919; }
+.html { color: #e34f26; }
+.css { color: #1572b6; }
+.sass { color: #cc6699; }
+
+/* LESS text style */
+.less {
+    font-size: 28px;
+    font-weight: 700;
+    color: #294172;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.btn-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-services {
+    background-color: #28a745; /* vert */
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-services i {
+    font-size: 14px;
+}
+
+/* Effet hover (optionnel) */
+.btn-services:hover {
+    background-color: #218838;
+    transform: translateX(4px);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.section-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Barre verte verticale */
+.title-bar-vertical {
+    width: 5px;
+    height: 35px;
+    background-color: #28a745;
+    border-radius: 3px;
+}
+.section-title {
+    margin-top: 60px; /* augmente cette valeur si besoin */
+    
+    .testimonials {
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    background: #fff;
+    padding: 50px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* coin vert */
+.quote-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #28a745;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.quote-corner i {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.author h4 {
+    font-size: 16px;
+}
+
+.author span {
+    font-size: 14px;
+    color: #888;
+}
+
+/* dots */
+.dots {
+    margin-top: 25px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    background: #d6d6d6;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dots span.active {
+    background: #333;
+}
+
+    --bg-color: #080808;
+    --switch-bg: #0c0c0d;
+    --ball-color: #433b3b;
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    
+    post-card {
+  max-width: 600px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.post-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.post-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #28a745;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.post-card {
+  max-width: 600px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.post-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.post-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #28a745;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+Section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
